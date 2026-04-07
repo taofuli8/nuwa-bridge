@@ -1628,6 +1628,33 @@ class _ModelSettingsPageState extends State<ModelSettingsPage> {
                 child: Text(_isTesting ? '测试中...' : '测试连接'),
               ),
             ),
+            const SizedBox(height: 18),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 10),
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.surfaceContainerHighest,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Column(
+                children: <Widget>[
+                  const Text(
+                    '扫一扫关注我吧',
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  const SizedBox(height: 8),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: Image.asset(
+                      'assets/follow_qrcode.png',
+                      width: 180,
+                      height: 180,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
         ),
