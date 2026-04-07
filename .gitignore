@@ -43,3 +43,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local automation snapshots and temporary token exports
+/.playwright-mcp/
+/token-classic.yaml
+/token-page.yaml
